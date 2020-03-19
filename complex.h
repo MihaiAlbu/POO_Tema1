@@ -1,7 +1,3 @@
-// #include <iostream>
-// #include <math.h>
-// using namespace std;
-
 class complex {
 private:
     int real;
@@ -75,7 +71,7 @@ ostream& operator<<(ostream& out, complex& z){
     return out;
 }
 double complex::modul(){
-    return sqrt(real*real+imaginar*imaginar);
+    return sqrt((double)(real*real+imaginar*imaginar));
 }
 complex& complex::operator=(complex &z){
     real=z.real;
